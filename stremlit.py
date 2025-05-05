@@ -7,7 +7,7 @@ import streamlit as st
 import sqlite3
 
 load_dotenv()
-os.environ['GROQ_API_KEY']="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"
+groq_api_key = os.getenv('GROQ_API_KEY')
 
 # Create a SQLite database
 conn = sqlite3.connect('story_and_poem_generator.db')
